@@ -2,15 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
-import { PhotoComponent } from './ap-photo/ap-photo.component';
+import { PhotoComponent } from './ap-photos/ap-photo/ap-photo.component';
+import { PhotosModule } from './ap-photos/ap-photos';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PhotoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PhotosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
